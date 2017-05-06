@@ -7,7 +7,7 @@
 			"name": "ポートへのアタッチ",
 			"protocol": "legacy",
 			"address": "localhost",
-			"port": 18088,
+			"port": 5858,
 			"outFiles": [
 				"${workspaceRoot}/dist/**/*.js"
 			],
