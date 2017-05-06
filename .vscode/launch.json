@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "attach",
+			"name": "ポートへのアタッチ",
+			"protocol": "legacy",
+			"address": "localhost",
+			"port": 18088,
+			"outFiles": [
+				"${workspaceRoot}/dist/**/*.js"
+			],
+			"remoteRoot": "/var/www/dist",
+			"localRoot": "${workspaceRoot}/dist",
+			"trace": true
+		}
+	]
+}

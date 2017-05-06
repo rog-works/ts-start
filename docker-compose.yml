@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ts:
+    container_name: ts
+    build: ./
+    image: ts:latest
+    volumes:
+      - ./:/var/www
+    ports:
+      - 18087:80
+      - 18088:18088
+    command: ['node', '--debug=0.0.0.0:18088', '/var/www/dist/Server.js']
